@@ -1,5 +1,4 @@
- import { MarkerClusterer } from "@googlemaps/markerclusterer";
-
+ import MarkerClusterer, { MarkerClustererOptions } from '@google/markerclustererplus';
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
