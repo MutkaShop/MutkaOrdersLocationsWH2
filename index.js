@@ -1,4 +1,4 @@
- import MarkerClusterer, { MarkerClustererOptions } from '@google/markerclustererplus';
+//import { MarkerClusterer } from "@googlemaps/markerclusterer";
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -16,7 +16,8 @@ function initMap() {
   });
 
   // Add a marker clusterer to manage the markers.
-  new MarkerClusterer({ markers, map });
+  new markerClusterer.MarkerClusterer({ markers, map });
+  console.log(window);
 }
 
 const locations = [
